@@ -28,8 +28,5 @@ p_c = np.load('p_c.npy')
 miu = np.load('miu.npy')
 var = np.load('var.npy')
 
-
-
-
 for x in xs:
     p_x_c = signal.gaussian(miu, std=var)

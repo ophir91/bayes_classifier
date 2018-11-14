@@ -7,12 +7,12 @@ X_PATH = '../dataset/database_mfcc_matlab/TRAIN/input'
 classes = 39
 features = 351
 xs = list()
-for x in os.listdir(X_PATH)[:1000]:
+for x in os.listdir(X_PATH):
     xs.append(sio.loadmat(os.path.join(X_PATH, x))['mfcc_39_9'])
 
 C_PATH = '../dataset/database_mfcc_matlab/TRAIN/label'
 cs = list()
-for c in os.listdir(C_PATH)[:1000]:
+for c in os.listdir(C_PATH):
     cs.append(sio.loadmat(os.path.join(C_PATH, c))['onehot_vec'])
 
 
